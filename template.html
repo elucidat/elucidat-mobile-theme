@@ -1,0 +1,41 @@
+    
+    <div id="body" class="editable edit-animation edit-inset edit-typography edit-font-size">
+
+        <div id="header" class="editable edit-color">
+                <div class="travel {previous.disabled}">
+                    <a href="{previous.url}"><i class="icon-chevron-left icon-white"></i></a>
+                </div>
+                <div class="travel menu">
+                    <a id="menu_toggle" href="#project_navigation" data-toggle="dropdown" data-target="#project_navigation"><i class="icon-list icon-white"></i></a>
+                </div>
+                <!--<li class="status">
+                    {navigation.current} of {navigation.total}
+                </li>-->
+                
+                <div id="project_title">
+                    <h1 class="editable edit-text edit-font-size">{project.name}</h1>
+                </div>
+
+                <div class="travel right {next.disabled}">
+                    <a href="{next.url}"><i class="icon-chevron-right icon-white"></i></a>
+                </div>
+        </div>
+
+        <div id="project_navigation" class="editable edit-inset edit-color">
+            <ul data-role="navigation">
+                {navigation.html}
+            </ul>
+        </div>
+
+        <div id="page_wrapper" class="editable edit-color edit-inset edit-image">
+
+            <div id="page_title">
+                <h2 data-role="page.name" class="editable edit-text edit-font-size">{page.name}</h2>
+                <p><small>{navigation.current} of {navigation.total}</small></p>
+            </div>
+            <div id="page_wrapper_inner">
+                {page.html}
+            </div>
+        </div> 
+    </div> 
+
