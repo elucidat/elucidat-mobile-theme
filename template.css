@@ -3,13 +3,11 @@
 
 
 #body {
-	background-color: #FFF;
-	background-image:url(images/noise-body.png);
+	background-color:#000;
 	line-height:1.4em;
 }
 
 #header {
-	background-color:#000;
 	height:50px;
 }
 
@@ -125,6 +123,8 @@
 }
 #page_wrapper {
 	padding-bottom: 30px;
+	background-image:url(images/noise-body.png);
+	background-color:#FFF;
 }
 #page_wrapper_inner {
 	position:relative;
