@@ -1,12 +1,10 @@
     
-    <div id="body" class="editable edit-animation edit-typography edit-font-size edit-color edit-inset">
+    <div id="body">
 
         <div id="header">
                 
-                <div id="project_title">
-                    <h1 class="editable edit-text edit-font-size">{project.name}</h1>
-                </div>
-
+                <h1>{project.name}</h1>
+                
                 <div class="travel {previous.disabled}" data-role="pager-previous">
                     <a href="{previous.url}"><i class="icon-chevron-left icon-white"></i></a>
                 </div>
@@ -20,16 +18,18 @@
 
         </div>
 
-        <div id="project_navigation" class="editable edit-inset edit-color">
-            <ul data-role="navigation">
-                {navigation.html}
-            </ul>
+        <div id="project_navigation">
+            <div class="scroller">
+                <ul data-role="navigation">
+                    {navigation.html}
+                </ul>
+            </div>
         </div>
 
-        <div id="page_wrapper" class="editable edit-color edit-inset edit-image">
+        <div id="page_wrapper">
 
             <div id="page_title">
-                <h2 data-role="page.name" class="editable edit-text edit-font-size">{page.name}</h2>
+                <h2 data-role="page.name">{page.name}</h2>
                 <div data-role="pager-status">
                     <p><small>{navigation.current} of {navigation.total}</small></p>
                 </div>

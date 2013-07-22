@@ -17,7 +17,6 @@
 	padding-top:10px;
 	padding-left:10px;
 	padding-bottom:10px;
-	left:0px;
 }
 .travel.disabled {
 	opacity:0.4;
@@ -93,25 +92,22 @@
 	padding-top: 10px;
 }
 
-
-#project_title {
-	color: #FFFFFF;
-    left: 0;
-    top:1px;
+h1 {
+    z-index: 100;
+    left: 92px;
+    top:10px;
     position: absolute;
-    text-align: center;
-    width: 100%;
-}
-
-#project_title h1 {
+	color: #FFFFFF;
 	font-weight:normal;
 	text-shadow: #666 0.05em 0.05em 0.05em;
 	font-size: 1.8em;
 	line-height: 1em;
+	display: inline-block;
+
 }
 #page_title {
 	padding-left:20px;
-	padding-top:30px;
+	padding-top:25px;
 	padding-bottom:20px;
 }
 #page_title h2 {
@@ -130,9 +126,6 @@
 #page_wrapper_inner {
 	position:relative;
 }
-
-
-
 
 /* questionnaire styles */
 .answer {
@@ -201,4 +194,27 @@ html i.icon-ppt {
 	background-position: -60px 0;
 }
 
+@media (max-width: 767px) { 
+	/*body:before { content: "Rule: max-width: 767px; "; }*/
+	h1 {
+		font-size: 1.5em;
+    	top:12px;
+	}
+	#page_title {
+	    padding-top: 20px;
+	}
+	#page_title h2 {
+		font-size: 1.6em;
+	}
+}
 
+@media (max-width: 480px) { 
+	/*body:before { content: "Rule: max-width: 767px; "; }*/
+	h1 {
+		font-size: 1.2em;
+    	top:15px;
+	}
+	#page_title h2 {
+		font-size: 1.4em;
+	}
+}

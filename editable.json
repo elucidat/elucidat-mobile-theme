@@ -1,0 +1,32 @@
+{
+	"body": {
+		"animation":true,
+		"font": {
+			"size": true,
+			"family": true
+		},
+		"color":true,
+		"inset":true
+	},
+	"h1": {
+		"font": {
+			"size": true
+		},
+		"text": true
+	},
+	"#project_navigation": {
+		"color":true,
+		"inset":true
+	},
+	"#page_wrapper": {
+		"color":true,
+		"inset":true,
+		"image":true
+		},
+	"#page_title h2": {
+		"text": true,
+		"font": {
+			"size": true
+		}
+	}
+}
