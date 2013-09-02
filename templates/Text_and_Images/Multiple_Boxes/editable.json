@@ -1,8 +1,6 @@
 {
 	"#image": {
-		"image": {
-			"always-show-placeholder": true
-		}, 
+		"image": true, 
 		"resize": {
 			"resize-height": true
 		},
@@ -10,6 +8,9 @@
 		"inset": true
 	},
 	".text_box": {
+		"image": {
+			"show-placeholder": false
+		},
 		"animation": true,
 		"delete": true,
 		"resize": true,
