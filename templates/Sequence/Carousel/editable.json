@@ -15,7 +15,11 @@
 	".carousel_caption": {
 		"resize": true,
 		"move": true,
+		"image": {
+			"show-placeholder": false
+		},
 		"color": true,
+		"delete": true,
 		"font": {
 			"size":true
 		},

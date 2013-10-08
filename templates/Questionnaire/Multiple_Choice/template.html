@@ -1,8 +1,6 @@
+            <div class="clearfix">
 
-
-            <div id="background">
-
-                <div id="text_wrapper" class="span8">
+                <div id="text_wrapper">
 
                     <div id="text_content">
                         <p>This questionnaire template allows you to assess how the learner is getting on.</p>
@@ -11,24 +9,22 @@
                     <form class="questionnaire">
                         <div id="questionnaire_wrapper" class="clearfix">
                             <div class="add-option-template hide">
-                                <div id="answer_{id}" class="answer">
+                                <div id="answer_{id}" class="answer clearfix">
                                     <span class="input">checkbox:checkbox_{id}</span>
                                     <label for="checkbox_{id}">Answer {number}</label>
                                 </div>
                             </div>
-                            <div id="answer_1" class="answer">
+                            <div id="answer_1" class="answer clearfix">
                                 <span class="input">checkbox:checkbox_1</span>
                                 <label for="checkbox_1">Answer 1</label>
                             </div>
-                            <div id="answer_2" class="answer">
+                            <div id="answer_2" class="answer clearfix">
                                 <span class="input">checkbox:checkbox_2</span>
                                 <label for="checkbox_2">Answer 2</label>
                             </div>
                         </div>
 
-                        <div class="button_wrapper">
-                           <a class="save_button" id="save_button">Find out if you are right!</a>
-                        </div>
+                        <a id="save_button" class="save_button clearfix"><span>Find out if you are right!</span> <i class="icon-chevron-right icon-white"></i></a>
 
                         <div id="correct" class="modal hide fade answered_correct" tabindex="-1" role="dialog" aria-labelledby="correct_label" aria-hidden="true">
                             <div class="modal-header">
@@ -82,9 +78,6 @@
 
                 </div>
 
-                <div id="image" class="span3">&nbsp;</div>
+                <div id="image">&nbsp;</div>
 
             </div>
-
-
-            <!-- START default Text_and_Images Image_Behind -->

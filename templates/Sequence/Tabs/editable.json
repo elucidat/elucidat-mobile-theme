@@ -17,6 +17,10 @@
 		"font": true,
 		"inset": true
 	},
+	".tab-pane": {
+		"color": true,
+		"inset": true
+	},
 	".image": {
 		"delete": true,
 		"image": true,

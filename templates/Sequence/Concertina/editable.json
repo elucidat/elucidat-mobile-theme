@@ -9,14 +9,24 @@
 		"add-option": true
 	},
 	".accordion-group": {
+		"animation":true,
 		"delete": true
 	},
 	".accordion-toggle":{
-		"animation":true,
 		"text":true,
 		"inset":true,
 		"color":true,
-		"font":true
+		"font":{
+			"size":true
+		}
+	},
+	".accordion-inner":{
+		"animation":true,
+		"inset":true,
+		"color":true,
+		"font":{
+			"size":true
+		}
 	},
 	".image": {
 		"delete": true,

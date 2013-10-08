@@ -6,45 +6,25 @@ form {
     position:relative;
 }
 
-.text_box, #text_intro {
-    background-color: rgba(255, 255, 255, 0.75);
-    border-radius: 10px 10px 10px 10px;
-    color: #000;
-    left: 50px;
-    top: 300px;
-    padding: 9px 24px 7px 24px;
+.text_box {
+    min-height: 30px;
+    left: 3%;
+    top: 5%;
     position: absolute;
-    width:auto;
-    min-height:25px;
-    margin-right: 0;
+    width: 70%;
 }
-#text_intro {
-    background-color: rgba(255, 255, 255, 1);
-    padding:14px 20px 5px;
-    left: 20px;
-    top: 20px;
+
+.answer {
+    position: absolute;
+    left:3%;
+    width:40%;
+    margin-right:0;
 }
 #answer_1 {
-    top:100px;
-    left:50px;
+    top:30%;
 }
-
 #answer_2 {
-    top:170px;
-    left:85px;
-
-}
-.answer span.input {
-    display: block;
-    position:absolute;
-    left:12px;
-}
-label {
-    display: block;
-    float: left;
-    font-size: 1.2em;
-    padding-left: 10px;
-    padding-top:4px;
+    top:40%;
 }
 
 #image {
@@ -54,26 +34,40 @@ label {
     height:500px;
     position: relative;
 }
-.button_wrapper {
-    padding-top: 0;
-}
 .save_button {
     position: absolute;
-    left: 115px;
-    top: 240px;
+    left: 3%;
+    top: 50%;
 }
 
-@media (max-width: 979px) and (min-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
     html .text_box {
-        max-width:500px;
+        width: 90%;
+        left: 5%;
     }
+    html .answer {
+        left: 5%;
+        width: 60%;
+    }
+
+    html #answer_1 {
+        top:37%;
+    }
+    html #answer_2 {
+        top:47%;
+    }
+    html a.save_button {
+        left: 5%;
+        top:57%;
+    }
+
 }
 @media (max-width: 480px) {
-    html .text_box, html #text_intro {
+    html .text_box, html .answer {
         left: 0px;
         bottom:0px;
         width:auto;
-        margin-bottom:20px;
+        margin-bottom:10px;
         border-radius:0;
         top:auto;
         position:relative;
@@ -84,15 +78,10 @@ label {
         height:auto;
         min-height:400px;
     }
-    html #save_button {
+    html a.save_button {
         position:relative;
         top:10px;
-        left:20px;
+        left:10px;
         margin-bottom: 10px;
-    }
-}
-@media (max-width: 480px) {
-    html #image {
-        border-radius:0;
     }
 }

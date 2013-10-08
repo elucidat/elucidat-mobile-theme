@@ -1,6 +1,6 @@
 
 .carousel {
-	margin-bottom:0;
+    margin-bottom:0;
 }
 .carousel_image {
     width:100%;
@@ -9,31 +9,79 @@
 }
 
 .carousel-control.right {
-	right:15px;
+    right:15px;
 }
 
 .carousel_caption {
-	background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 10px 10px 10px 10px;
-    min-height: 80px;
-    left: 20px;
-    padding: 9px 24px 8px;
+    min-height: 30px;
     position: absolute;
-    top: 300px;
-    width: 500px;
-    bottom: auto;
+    width: 45%;
+}
+
+.caption1 {
+    top:40%;
+    left:50%;
+}
+
+.caption2 {
+    top:65%;
+    left:50%;
+}
+
+a[class^="carousel-"] {
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 50%;
+    width:30px;
+    height:30px;
+    display:block;
+    position: absolute;
+    bottom:12px;
+}
+a.carousel-left {
+    left:12px;
+}
+a.carousel-right {
+    right:12px;
+}
+a[class^="carousel-"]:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+}
+.next_prev i[class^="icon-"]  {
+    margin-left: 8px;
+    margin-top: 6px;
+}
+
+@media (max-width: 979px) {
+    .caption1 {
+        top:30%;
+    }
+    .caption2 {
+        top:63%;
+    }
+}
+@media (max-width: 768px) {
+    .caption1 {
+        top:15%;
+        width:55%;
+        left:40%;
+    }
+    .caption2 {
+        top:55%;
+        width:55%;
+        left:40%;
+    }
 }
 @media (max-width: 480px) {
-	html .carousel_caption {
+    html .carousel_caption {
         left: 0px;
         bottom:0px;
         width:auto;
-        height:auto;
-        border-radius:0;
+        margin-bottom:20px;
         top:auto;
-        font-size: 1.1em;
-        line-height: 1.2em;
-	}
+        position:relative;
+        margin-left:10px;
+        margin-right:10px;
+    }
     html .carousel_image {
         border-radius:0;
     }

@@ -1,68 +1,49 @@
 
 #hotspot_image {
-    height:600px;    
-    margin-left: 0;    
+    height:450px;
+    width:300px;     
     position: relative;
+    float:left;
 }
-
-#text_content {
-    padding: 14px 0 0 20px;
-    margin-right:10px;
-    margin-left:0px;
+.text_content {
+    padding-top: 0;
 }
-
-.text_pad {
-    padding-right:20px;
+.text_wrapper {
+    float:left;
+    width:450px;
 }
-
-@media (max-width: 767px) and (min-width: 481px) {
-    html .text_pad {
-        padding-left: 20px;
+@media (min-width: 767px) and (max-width: 968px) {
+    .text_wrapper {
+        width:300px;
     }
+}
+@media (max-width: 767px) {
     html #hotspot_image {
-        width: 90%;
+        width: 80%;
     }
-    html #text_content {
+    html .text_wrapper {
         width: 70%;
+        padding-top: 10px;
     }
 }
 
 @media (max-width: 480px) {
-    html .text_pad {
-        padding-left: 20px;
-    }
     html #hotspot_image {
         width: 100%;
     }
-    html #text_content {
+    html .text_wrapper {
         width: 100%;
     }
 }
 
 
-.hotspot {
-    position:absolute;
-
-    left:70px;
-    top:100px;
-
-    width:140px;
-    height:140px;
-
-    background-color:rgba(255,255,255,0.3);
-
-    border-radius: 50%;
-    cursor: pointer;
-
-    text-decoration: none;
-}
 #hotspot1 {    
-    left: 50px;
-    top: 200px;
+    left: 10%;
+    top: 20%;
 }
 
 #hotspot2 {
-    left:250px;
-    top:50px;
+    left: 20%;
+    top: 60%;
 }
 

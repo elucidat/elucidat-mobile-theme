@@ -10,7 +10,7 @@
 		"inset": true
 	},
 
-	"#text_intro": {
+	"#overlay": {
 		"animation": true,
 		"resize": true,
 		"move": true,
@@ -24,7 +24,8 @@
 	"#text_content": {
 		"text": {
 			"html": true
-		}
+		},
+		"inset":true
 	},
 	".modal": {
 		"color": true

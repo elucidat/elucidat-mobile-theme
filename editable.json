@@ -5,8 +5,7 @@
 			"size": true,
 			"family": true
 		},
-		"color":true,
-		"inset":true
+		"color":true
 	},
 	"h1": {
 		"font": {

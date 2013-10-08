@@ -1,6 +1,7 @@
 
+
 #text_wrapper {
-    padding-left:20px;
+	padding:0 30px 10px 20px;
 }
 
 #accordion {
@@ -8,25 +9,57 @@
 
 #text_content {
     padding-bottom:10px;
-    padding-top:20px;
+    padding-top:0px;
 }
 
-.accordion-group {
-	margin-bottom:5px;
-	box-shadow: 1px 3px 5px 1px rgba(60, 30, 30, 0.1);
 
+.accordion-group {
+	margin-bottom:10px;
+	border:0 none;
+	border-radius:0;
+}
+
+.accordion-heading {
 }
 
 a.accordion-toggle {
-	border-radius: 4px 4px 0 0;
 	font-weight:bold;
 	font-size:1.2em;
 	text-decoration: none;
 	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 a.accordion-toggle.collapsed {
-	border-radius: 4px;
+}
+.accordion-inner {
+	margin-top:1px;
+	border-top:0 none;
+	background-color: rgba(0, 0, 0, 0.05);
+    *zoom: 1;
+    padding: 12px 15px;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.accordion-inner:before,
+.accordion-inner:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.accordion-inner:after {
+    clear: both;
 }
 
 .image {
@@ -53,22 +86,37 @@ a.accordion-toggle.collapsed {
         border-radius: 0;
         border:0;
     }
-    html a.accordion-toggle {
-        border-radius: 0;
-    }
 
 	html #text_content {
-		padding:20px 20px 5px 20px;
+		padding:0px 20px 5px 20px;
 	}
 	html .accordion {
     	padding-bottom: 10px;
 	}
 	html .accordion-inner {
-    	padding-bottom: 10px;    
+    	padding-bottom: 10px;   
+    	padding-left:20px; 
     	overflow: hidden;
 	}
 
 	html #text_wrapper {
-	    padding-left:0px;
+		padding-left:0;
+		padding-right:0;
 	}
+	.accordion-heading .accordion-toggle {
+    	padding: 8px 20px;
+	}
+	html .accordian_text, 
+	html .image + .accordian_text {
+    	padding-right: 30px;
+    	width: auto;
+    	float:none;
+    	clear:both;
+	}
+}
+
+button#add_option_button {
+	left: 20px;
+    position: relative;
+    top: 5px;
 }

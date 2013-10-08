@@ -1,27 +1,44 @@
 
 #text_wrapper {
-    padding-left:20px;
+	padding:0 30px 10px 20px;
 }
 
 #text_content {
     padding-bottom:10px;
-    padding-top:20px;
+    padding-top:0px;
 }
-ul.nav {
-	width: 240px;
+
+ul.nav-tabs {
+	border-right: 0 none;
+	margin-right: 0;
 }
+
 ul.nav li {
-	border-radius: 4px 4px 0 0;
 	font-weight:bold;
 	font-size:1.2em;
-	text-decoration: none;
 	opacity: 1;
 }
-.nav-tabs > .active > a {
-	background-color: #F7F7F7;
+ul.nav li a {
+	text-decoration: none;
+	border-radius: 0;
+	border:0 none;
 }
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+.nav-tabs a:hover {
+	background-color: rgba(0, 0, 0, 0.15);
+}
+
+
 .tab-pane {
+	margin-left:1px;
+	border-left:0 none;
+	background-color: rgba(0, 0, 0, 0.05);
+    *zoom: 1;
+    padding:10px;
 	overflow:hidden;
+    padding: 12px 15px;
 }
 .image {
 	float:left;
@@ -30,46 +47,51 @@ ul.nav li {
 	margin-bottom:20px;
 	margin-right:20px;
 }
-.image + .text-content, .image + .text_content {
+.image + .tab_text {
 	float:left;
-	width: 300px;
-}
-
-#text_content {
-    padding-bottom:20px;
-    padding-top:20px;
+	width: 400px;
 }
 
 
-@media (min-width: 1200px) { 
-    html .image + .text_content {   
-		width: 350px;
-    }
-}
-@media (max-width: 979px) { 
-    html .image + .text_content {   
-    	width: 290px;
+@media (max-width: 979px) and (min-width:767px) { 
+    html .image + .tab_text {   
+    	width: 240px;
     }
 }
 @media (max-width: 768px) {
 	html #text_content {
-		padding:20px 20px 5px 20px;
-	}
-	html .tab-pane {
-		padding:0 20px 20px 20px;
-	}
-	html ul.nav {
-		width:auto;
-		float:none;
-		border-right:0;
-		margin-right: 0;
-	}
-	html ul.nav li a {
-		border:0;
-		border-radius:0;
-		padding-left:20px;
+		padding:0px 20px 5px 20px;
 	}
 	html #text_wrapper {
-	    padding-left:0px;
+	    padding:0px;
+	}
+	html .tab_text, 
+	html .image + .tab_text {
+    	padding-right: 30px;
+    	width: auto;
+    	float:none;
+    	clear:both;
+	}
+	html .tab-pane {
+		padding:20px 20px 20px 20px;
+	}
+	html ul.nav {
+		float:none;
+	}
+	html ul.nav li a {
+		padding-left:20px;
+	}
+}
+
+
+
+button#add_option_button {
+	left: 0;
+    position: relative;
+    top: 15px;
+}
+@media (max-width: 768px) {
+	button#add_option_button {
+		left: 15px;
 	}
 }

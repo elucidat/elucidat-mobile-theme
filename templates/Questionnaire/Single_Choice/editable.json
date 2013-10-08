@@ -4,6 +4,9 @@
 		"resize": true,
 		"inset": true
 	},
+	"#text_wrapper": {
+		"resize": true
+	},
 	"#text_content": {
 		"text": {
 			"html": true
@@ -11,8 +14,7 @@
 		"inset": true
 	},
 	"#questionnaire_wrapper":{
-		"add-option": true,
-		"resize": true
+		"add-option": true
 	},
 	".answer": {
 		"answer": true,

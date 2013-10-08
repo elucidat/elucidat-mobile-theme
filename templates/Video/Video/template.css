@@ -1,6 +1,6 @@
 
-#background {
-    padding-top:20px;
+#text_wrapper {
+    padding:0 30px 10px 20px;
 }
 
 #video {
@@ -28,8 +28,10 @@ div.video_player {
 	margin-top:0;
 }
 
-#text_content, #transcript_link {
-    padding: 20px 30px 20px 30px;
+#text_content, #text_before, #transcript_link {
+}
+#text_content {
+    padding-top:15px;
 }
 #transcript_link {
     padding-top:0;
