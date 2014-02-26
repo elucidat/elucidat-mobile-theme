@@ -34,7 +34,7 @@
 		"resize": true,
 		"inset": true
 	},
-	".text_content": {
+	".accordian_text": {
 		"text": {
 			"html": true
 		},
